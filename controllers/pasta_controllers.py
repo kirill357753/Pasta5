@@ -6,9 +6,9 @@ class PastaController:
 
     def menu_cafe(self):
         pasta_data = (f"Паста :: {self.model.get_name()}\n"
-                      f"Состав :: {self.model.get_ingredients()}\n"
+                      f"Состав :: {','.join(self.model.get_ingredients())}\n"
                       f"Цена :: {self.model.get_price()}\n"
-                      f"Вес :: {','.join(self.model.get_weight())}\n")
+                      f"Вес :: {self.model.get_weight()}\n")
         return pasta_data
 
     def site_menu(self):

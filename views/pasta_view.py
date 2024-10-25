@@ -12,7 +12,7 @@ class PastaView:
         if type(new_ingredients) is not list:
             print("Неверный тип данных!")
             return
-        set_ingredients_response = self.controller.set_price(user_right, new_ingredients)
+        set_ingredients_response = self.controller.set_ingredients(user_right, new_ingredients)
         if set_ingredients_response == "banned":
             print("Нет права доступа")
         else:

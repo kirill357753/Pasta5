@@ -39,7 +39,7 @@ class Pasta:
     def set_picture(self, new_picture):
         self.__picture = new_picture
 
-    def set_ingredient(self, new_ingredient: list):
+    def set_ingredients(self, new_ingredient: list):
         if type(new_ingredient) is list:
             self.__ingredients.clear()
             self.__ingredients.extend(new_ingredient)
